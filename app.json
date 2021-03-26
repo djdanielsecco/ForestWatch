@@ -1,4 +1,6 @@
 {
+  "name": "Forest",
+  "displayName": "Forest",
   "expo": {
     "name": "Forest",
     "slug": "Forest",
@@ -17,13 +19,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.danielsecco.pg",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.danielsecco.pg"
     },
     "web": {
       "favicon": "./assets/favicon.png"
